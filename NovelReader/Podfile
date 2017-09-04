@@ -1,0 +1,15 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+
+target 'NovelReader' do
+pod 'Then'
+pod 'Kingfisher'
+pod 'Ji'
+pod 'Moya'
+pod 'Alamofire'
+pod 'HandyJSON'
+pod 'RxSwift'
+pod 'RxDataSources', '~> 1.0'
+
+end
