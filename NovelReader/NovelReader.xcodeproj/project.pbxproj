@@ -13,6 +13,12 @@
 		38CA5F481F5D7F12008EB9EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CA5F411F5D7F12008EB9EB /* LaunchScreen.storyboard */; };
 		38CA5F491F5D7F12008EB9EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CA5F431F5D7F12008EB9EB /* Main.storyboard */; };
 		7A5212C3B2185B43A4F24F88 /* Pods_NovelReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9160B5576B80055ECABE67E0 /* Pods_NovelReader.framework */; };
+		F29762C31F5E7D570046787B /* RoomListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29762C21F5E7D570046787B /* RoomListTableViewController.swift */; };
+		F29762C51F5E7D740046787B /* RoomListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29762C41F5E7D740046787B /* RoomListViewModel.swift */; };
+		F29762C71F5E7D860046787B /* RoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29762C61F5E7D860046787B /* RoomModel.swift */; };
+		F2A0776B1F5E491900A368AC /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A0776A1F5E491900A368AC /* Const.swift */; };
+		F2A077701F5E494700A368AC /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A0776F1F5E494700A368AC /* Notification.swift */; };
+		F2A077751F5E4D3F00A368AC /* NetApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A077741F5E4D3F00A368AC /* NetApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +31,13 @@
 		38CA5F441F5D7F12008EB9EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9160B5576B80055ECABE67E0 /* Pods_NovelReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NovelReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9283EDBB36AA7F5DBE2D900D /* Pods-NovelReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NovelReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NovelReader/Pods-NovelReader.debug.xcconfig"; sourceTree = "<group>"; };
+		F29762C21F5E7D570046787B /* RoomListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomListTableViewController.swift; sourceTree = "<group>"; };
+		F29762C41F5E7D740046787B /* RoomListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomListViewModel.swift; sourceTree = "<group>"; };
+		F29762C61F5E7D860046787B /* RoomModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomModel.swift; sourceTree = "<group>"; };
+		F2A0776A1F5E491900A368AC /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		F2A0776C1F5E493000A368AC /* NovelReader-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NovelReader-Bridging-Header.h"; sourceTree = "<group>"; };
+		F2A0776F1F5E494700A368AC /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		F2A077741F5E4D3F00A368AC /* NetApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetApi.swift; sourceTree = "<group>"; };
 		FC1549D0387815F91FCE672A /* Pods-NovelReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NovelReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-NovelReader/Pods-NovelReader.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,8 +83,8 @@
 		3895BB881F5D7EA5005E6687 /* NovelReader */ = {
 			isa = PBXGroup;
 			children = (
+				F29762BD1F5E7D280046787B /* Feature(模块) */,
 				38CA5F321F5D7F12008EB9EB /* Common(全局) */,
-				38CA5F3B1F5D7F12008EB9EB /* Feature(模块) */,
 				38CA5F3F1F5D7F12008EB9EB /* Resource(资源) */,
 			);
 			path = NovelReader;
@@ -80,9 +93,9 @@
 		38CA5F321F5D7F12008EB9EB /* Common(全局) */ = {
 			isa = PBXGroup;
 			children = (
+				F2A077711F5E4CF000A368AC /* Service(服务) */,
+				F2A077651F5E486500A368AC /* Config(配置) */,
 				38CA5F331F5D7F12008EB9EB /* Entrance(入口) */,
-				38CA5F361F5D7F12008EB9EB /* Model(全局模型) */,
-				38CA5F371F5D7F12008EB9EB /* Service(服务) */,
 			);
 			path = "Common(全局)";
 			sourceTree = "<group>";
@@ -94,67 +107,6 @@
 				38CA5F351F5D7F12008EB9EB /* Info.plist */,
 			);
 			path = "Entrance(入口)";
-			sourceTree = "<group>";
-		};
-		38CA5F361F5D7F12008EB9EB /* Model(全局模型) */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Model(全局模型)";
-			sourceTree = "<group>";
-		};
-		38CA5F371F5D7F12008EB9EB /* Service(服务) */ = {
-			isa = PBXGroup;
-			children = (
-				38CA5F381F5D7F12008EB9EB /* Http(短连接) */,
-				38CA5F391F5D7F12008EB9EB /* Local(本地) */,
-				38CA5F3A1F5D7F12008EB9EB /* Socket(长连接) */,
-			);
-			path = "Service(服务)";
-			sourceTree = "<group>";
-		};
-		38CA5F381F5D7F12008EB9EB /* Http(短连接) */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Http(短连接)";
-			sourceTree = "<group>";
-		};
-		38CA5F391F5D7F12008EB9EB /* Local(本地) */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Local(本地)";
-			sourceTree = "<group>";
-		};
-		38CA5F3A1F5D7F12008EB9EB /* Socket(长连接) */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Socket(长连接)";
-			sourceTree = "<group>";
-		};
-		38CA5F3B1F5D7F12008EB9EB /* Feature(模块) */ = {
-			isa = PBXGroup;
-			children = (
-				38CA5F3C1F5D7F12008EB9EB /* GuideView(引导页) */,
-				38CA5F3D1F5D7F12008EB9EB /* Home(首页) */,
-			);
-			path = "Feature(模块)";
-			sourceTree = "<group>";
-		};
-		38CA5F3C1F5D7F12008EB9EB /* GuideView(引导页) */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "GuideView(引导页)";
-			sourceTree = "<group>";
-		};
-		38CA5F3D1F5D7F12008EB9EB /* Home(首页) */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Home(首页)";
 			sourceTree = "<group>";
 		};
 		38CA5F3F1F5D7F12008EB9EB /* Resource(资源) */ = {
@@ -174,6 +126,66 @@
 				FC1549D0387815F91FCE672A /* Pods-NovelReader.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F29762BD1F5E7D280046787B /* Feature(模块) */ = {
+			isa = PBXGroup;
+			children = (
+				F29762BE1F5E7D280046787B /* Home(首页) */,
+			);
+			path = "Feature(模块)";
+			sourceTree = "<group>";
+		};
+		F29762BE1F5E7D280046787B /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				F29762BF1F5E7D280046787B /* Model */,
+				F29762C01F5E7D280046787B /* View */,
+				F29762C11F5E7D280046787B /* ViewModel */,
+			);
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		F29762BF1F5E7D280046787B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F29762C61F5E7D860046787B /* RoomModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F29762C01F5E7D280046787B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F29762C21F5E7D570046787B /* RoomListTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F29762C11F5E7D280046787B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F29762C41F5E7D740046787B /* RoomListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F2A077651F5E486500A368AC /* Config(配置) */ = {
+			isa = PBXGroup;
+			children = (
+				F2A0776A1F5E491900A368AC /* Const.swift */,
+				F2A0776F1F5E494700A368AC /* Notification.swift */,
+				F2A0776C1F5E493000A368AC /* NovelReader-Bridging-Header.h */,
+			);
+			path = "Config(配置)";
+			sourceTree = "<group>";
+		};
+		F2A077711F5E4CF000A368AC /* Service(服务) */ = {
+			isa = PBXGroup;
+			children = (
+				F2A077741F5E4D3F00A368AC /* NetApi.swift */,
+			);
+			path = "Service(服务)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,12 +218,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Zj;
 				TargetAttributes = {
 					3895BB851F5D7EA5005E6687 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = ADESGAWMRV;
+						DevelopmentTeam = 2DEDNW2H7U;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -279,7 +292,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D9037E5F8DAA41EEFC728E75 /* [CP] Embed Pods Frameworks */ = {
@@ -325,7 +338,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F29762C71F5E7D860046787B /* RoomModel.swift in Sources */,
+				F29762C31F5E7D570046787B /* RoomListTableViewController.swift in Sources */,
+				F29762C51F5E7D740046787B /* RoomListViewModel.swift in Sources */,
+				F2A077751F5E4D3F00A368AC /* NetApi.swift in Sources */,
 				38CA5F451F5D7F12008EB9EB /* AppDelegate.swift in Sources */,
+				F2A0776B1F5E491900A368AC /* Const.swift in Sources */,
+				F2A077701F5E494700A368AC /* Notification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +388,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -418,6 +438,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -447,12 +468,15 @@
 			baseConfigurationReference = 9283EDBB36AA7F5DBE2D900D /* Pods-NovelReader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ADESGAWMRV;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 2DEDNW2H7U;
 				INFOPLIST_FILE = "NovelReader/Common(全局)/Entrance(入口)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Zj.NovelReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_OBJC_BRIDGING_HEADER = "NovelReader/Common(全局)/Config(配置)/NovelReader-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -461,12 +485,14 @@
 			baseConfigurationReference = FC1549D0387815F91FCE672A /* Pods-NovelReader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ADESGAWMRV;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 2DEDNW2H7U;
 				INFOPLIST_FILE = "NovelReader/Common(全局)/Entrance(入口)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Zj.NovelReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_OBJC_BRIDGING_HEADER = "NovelReader/Common(全局)/Config(配置)/NovelReader-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

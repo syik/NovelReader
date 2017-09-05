@@ -6,7 +6,7 @@ target 'NovelReader' do
 pod 'Then'
 pod 'Kingfisher'
 pod 'Ji'
-pod 'Moya'
+pod 'Moya/RxSwift', '~> 8.0.0'
 pod 'Alamofire'
 pod 'HandyJSON'
 pod 'RxSwift'
