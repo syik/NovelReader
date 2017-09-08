@@ -15,10 +15,11 @@
 		7A5212C3B2185B43A4F24F88 /* Pods_NovelReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9160B5576B80055ECABE67E0 /* Pods_NovelReader.framework */; };
 		F258FCBE1F622D2C0030E9D0 /* TimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F258FCBD1F622D2C0030E9D0 /* TimeViewModel.swift */; };
 		F258FCC01F622D370030E9D0 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F258FCBF1F622D370030E9D0 /* ViewModelType.swift */; };
+		F258FCC21F62418F0030E9D0 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F258FCC11F62418F0030E9D0 /* Protocol.swift */; };
 		F295A83C1F60F85F00B2DC66 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295A83B1F60F85F00B2DC66 /* LoginViewController.swift */; };
 		F295A8421F610E8700B2DC66 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295A8411F610E8700B2DC66 /* RegisterViewController.swift */; };
 		F295A8441F61111500B2DC66 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295A8431F61111500B2DC66 /* RegisterViewModel.swift */; };
-		F295A8461F6112A000B2DC66 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295A8451F6112A000B2DC66 /* AccountService.swift */; };
+		F295A8461F6112A000B2DC66 /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295A8451F6112A000B2DC66 /* ValidationService.swift */; };
 		F29762C31F5E7D570046787B /* RoomListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29762C21F5E7D570046787B /* RoomListTableViewController.swift */; };
 		F29762C51F5E7D740046787B /* RoomListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29762C41F5E7D740046787B /* RoomListViewModel.swift */; };
 		F29762C71F5E7D860046787B /* RoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29762C61F5E7D860046787B /* RoomModel.swift */; };
@@ -40,10 +41,11 @@
 		9283EDBB36AA7F5DBE2D900D /* Pods-NovelReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NovelReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NovelReader/Pods-NovelReader.debug.xcconfig"; sourceTree = "<group>"; };
 		F258FCBD1F622D2C0030E9D0 /* TimeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewModel.swift; sourceTree = "<group>"; };
 		F258FCBF1F622D370030E9D0 /* ViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		F258FCC11F62418F0030E9D0 /* Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 		F295A83B1F60F85F00B2DC66 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F295A8411F610E8700B2DC66 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		F295A8431F61111500B2DC66 /* RegisterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
-		F295A8451F6112A000B2DC66 /* AccountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
+		F295A8451F6112A000B2DC66 /* ValidationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationService.swift; sourceTree = "<group>"; };
 		F29762C21F5E7D570046787B /* RoomListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomListTableViewController.swift; sourceTree = "<group>"; };
 		F29762C41F5E7D740046787B /* RoomListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomListViewModel.swift; sourceTree = "<group>"; };
 		F29762C61F5E7D860046787B /* RoomModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomModel.swift; sourceTree = "<group>"; };
@@ -266,7 +268,8 @@
 			isa = PBXGroup;
 			children = (
 				F2A077741F5E4D3F00A368AC /* NetApi.swift */,
-				F295A8451F6112A000B2DC66 /* AccountService.swift */,
+				F295A8451F6112A000B2DC66 /* ValidationService.swift */,
+				F258FCC11F62418F0030E9D0 /* Protocol.swift */,
 			);
 			path = "Service(服务)";
 			sourceTree = "<group>";
@@ -466,9 +469,10 @@
 				F2A077751F5E4D3F00A368AC /* NetApi.swift in Sources */,
 				F295A83C1F60F85F00B2DC66 /* LoginViewController.swift in Sources */,
 				38CA5F451F5D7F12008EB9EB /* AppDelegate.swift in Sources */,
-				F295A8461F6112A000B2DC66 /* AccountService.swift in Sources */,
+				F295A8461F6112A000B2DC66 /* ValidationService.swift in Sources */,
 				F2A0776B1F5E491900A368AC /* Const.swift in Sources */,
 				F2A077701F5E494700A368AC /* Notification.swift in Sources */,
+				F258FCC21F62418F0030E9D0 /* Protocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

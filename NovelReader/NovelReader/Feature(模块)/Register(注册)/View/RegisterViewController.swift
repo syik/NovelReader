@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class RegisterViewController: UIViewController {
 
@@ -18,10 +20,22 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var PasswordStatus: UILabel!
     @IBOutlet weak var PasswordRepeatStatus: UILabel!
     
+    let registerViewModel = RegisterViewModel()
+    let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setupBind()
+    }
+   
+    func setupBind() {
+        
+        Account.rx.text.orEmpty
+            .bind(to: registerViewModel.account)
+            .addDisposableTo(disposeBag)
+        
+        registerViewModel.accountValid.bind(to: AccountStatus.rx.isValid)
     }
     
     @IBAction func backBtnClicked(_ sender: Any) {
