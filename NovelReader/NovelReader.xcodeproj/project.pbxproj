@@ -13,12 +13,19 @@
 		38CA5F481F5D7F12008EB9EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CA5F411F5D7F12008EB9EB /* LaunchScreen.storyboard */; };
 		38CA5F491F5D7F12008EB9EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CA5F431F5D7F12008EB9EB /* Main.storyboard */; };
 		7A5212C3B2185B43A4F24F88 /* Pods_NovelReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9160B5576B80055ECABE67E0 /* Pods_NovelReader.framework */; };
+		F258FCBE1F622D2C0030E9D0 /* TimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F258FCBD1F622D2C0030E9D0 /* TimeViewModel.swift */; };
+		F258FCC01F622D370030E9D0 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F258FCBF1F622D370030E9D0 /* ViewModelType.swift */; };
+		F295A83C1F60F85F00B2DC66 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295A83B1F60F85F00B2DC66 /* LoginViewController.swift */; };
+		F295A8421F610E8700B2DC66 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295A8411F610E8700B2DC66 /* RegisterViewController.swift */; };
+		F295A8441F61111500B2DC66 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295A8431F61111500B2DC66 /* RegisterViewModel.swift */; };
+		F295A8461F6112A000B2DC66 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295A8451F6112A000B2DC66 /* AccountService.swift */; };
 		F29762C31F5E7D570046787B /* RoomListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29762C21F5E7D570046787B /* RoomListTableViewController.swift */; };
 		F29762C51F5E7D740046787B /* RoomListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29762C41F5E7D740046787B /* RoomListViewModel.swift */; };
 		F29762C71F5E7D860046787B /* RoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29762C61F5E7D860046787B /* RoomModel.swift */; };
 		F2A0776B1F5E491900A368AC /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A0776A1F5E491900A368AC /* Const.swift */; };
 		F2A077701F5E494700A368AC /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A0776F1F5E494700A368AC /* Notification.swift */; };
 		F2A077751F5E4D3F00A368AC /* NetApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A077741F5E4D3F00A368AC /* NetApi.swift */; };
+		F2CFF1631F61208E0042BB71 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CFF1621F61208E0042BB71 /* TimeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +38,12 @@
 		38CA5F441F5D7F12008EB9EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9160B5576B80055ECABE67E0 /* Pods_NovelReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NovelReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9283EDBB36AA7F5DBE2D900D /* Pods-NovelReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NovelReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NovelReader/Pods-NovelReader.debug.xcconfig"; sourceTree = "<group>"; };
+		F258FCBD1F622D2C0030E9D0 /* TimeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewModel.swift; sourceTree = "<group>"; };
+		F258FCBF1F622D370030E9D0 /* ViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		F295A83B1F60F85F00B2DC66 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F295A8411F610E8700B2DC66 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F295A8431F61111500B2DC66 /* RegisterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		F295A8451F6112A000B2DC66 /* AccountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
 		F29762C21F5E7D570046787B /* RoomListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomListTableViewController.swift; sourceTree = "<group>"; };
 		F29762C41F5E7D740046787B /* RoomListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomListViewModel.swift; sourceTree = "<group>"; };
 		F29762C61F5E7D860046787B /* RoomModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomModel.swift; sourceTree = "<group>"; };
@@ -38,6 +51,7 @@
 		F2A0776C1F5E493000A368AC /* NovelReader-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NovelReader-Bridging-Header.h"; sourceTree = "<group>"; };
 		F2A0776F1F5E494700A368AC /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		F2A077741F5E4D3F00A368AC /* NetApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetApi.swift; sourceTree = "<group>"; };
+		F2CFF1621F61208E0042BB71 /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
 		FC1549D0387815F91FCE672A /* Pods-NovelReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NovelReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-NovelReader/Pods-NovelReader.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,9 +142,77 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F295A8351F60F80300B2DC66 /* Login(登录) */ = {
+			isa = PBXGroup;
+			children = (
+				F295A8361F60F80300B2DC66 /* Model */,
+				F295A8371F60F80300B2DC66 /* View */,
+				F295A8381F60F80300B2DC66 /* ViewModel */,
+			);
+			path = "Login(登录)";
+			sourceTree = "<group>";
+		};
+		F295A8361F60F80300B2DC66 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F295A8371F60F80300B2DC66 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F295A83B1F60F85F00B2DC66 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F295A8381F60F80300B2DC66 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F295A83D1F610E7A00B2DC66 /* Register(注册) */ = {
+			isa = PBXGroup;
+			children = (
+				F295A83E1F610E7A00B2DC66 /* Model */,
+				F295A83F1F610E7A00B2DC66 /* View */,
+				F295A8401F610E7A00B2DC66 /* ViewModel */,
+			);
+			path = "Register(注册)";
+			sourceTree = "<group>";
+		};
+		F295A83E1F610E7A00B2DC66 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F295A83F1F610E7A00B2DC66 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F295A8411F610E8700B2DC66 /* RegisterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F295A8401F610E7A00B2DC66 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F295A8431F61111500B2DC66 /* RegisterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		F29762BD1F5E7D280046787B /* Feature(模块) */ = {
 			isa = PBXGroup;
 			children = (
+				F2CFF15E1F61207C0042BB71 /* Time(时间) */,
+				F295A83D1F610E7A00B2DC66 /* Register(注册) */,
+				F295A8351F60F80300B2DC66 /* Login(登录) */,
 				F29762BE1F5E7D280046787B /* Home(首页) */,
 			);
 			path = "Feature(模块)";
@@ -184,8 +266,43 @@
 			isa = PBXGroup;
 			children = (
 				F2A077741F5E4D3F00A368AC /* NetApi.swift */,
+				F295A8451F6112A000B2DC66 /* AccountService.swift */,
 			);
 			path = "Service(服务)";
+			sourceTree = "<group>";
+		};
+		F2CFF15E1F61207C0042BB71 /* Time(时间) */ = {
+			isa = PBXGroup;
+			children = (
+				F2CFF15F1F61207C0042BB71 /* Model */,
+				F2CFF1601F61207C0042BB71 /* View */,
+				F2CFF1611F61207C0042BB71 /* ViewModel */,
+			);
+			path = "Time(时间)";
+			sourceTree = "<group>";
+		};
+		F2CFF15F1F61207C0042BB71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2CFF1601F61207C0042BB71 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F2CFF1621F61208E0042BB71 /* TimeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2CFF1611F61207C0042BB71 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F258FCBD1F622D2C0030E9D0 /* TimeViewModel.swift */,
+				F258FCBF1F622D370030E9D0 /* ViewModelType.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,11 +455,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F295A8421F610E8700B2DC66 /* RegisterViewController.swift in Sources */,
+				F2CFF1631F61208E0042BB71 /* TimeViewController.swift in Sources */,
+				F295A8441F61111500B2DC66 /* RegisterViewModel.swift in Sources */,
 				F29762C71F5E7D860046787B /* RoomModel.swift in Sources */,
+				F258FCBE1F622D2C0030E9D0 /* TimeViewModel.swift in Sources */,
 				F29762C31F5E7D570046787B /* RoomListTableViewController.swift in Sources */,
+				F258FCC01F622D370030E9D0 /* ViewModelType.swift in Sources */,
 				F29762C51F5E7D740046787B /* RoomListViewModel.swift in Sources */,
 				F2A077751F5E4D3F00A368AC /* NetApi.swift in Sources */,
+				F295A83C1F60F85F00B2DC66 /* LoginViewController.swift in Sources */,
 				38CA5F451F5D7F12008EB9EB /* AppDelegate.swift in Sources */,
+				F295A8461F6112A000B2DC66 /* AccountService.swift in Sources */,
 				F2A0776B1F5E491900A368AC /* Const.swift in Sources */,
 				F2A077701F5E494700A368AC /* Notification.swift in Sources */,
 			);

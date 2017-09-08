@@ -13,7 +13,6 @@ class RoomListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        provider.request(.roomList(city: "wu", p: 1, num: 10))
         
     }
 
