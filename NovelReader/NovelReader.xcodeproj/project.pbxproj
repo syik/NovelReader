@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38473A771F63FA8900E1A4C5 /* CaculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38473A761F63FA8900E1A4C5 /* CaculateViewController.swift */; };
 		3895BB9C1F5D7EB3005E6687 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3895BB9B1F5D7EB3005E6687 /* Podfile */; };
 		38CA5F451F5D7F12008EB9EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CA5F341F5D7F12008EB9EB /* AppDelegate.swift */; };
 		38CA5F471F5D7F12008EB9EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38CA5F401F5D7F12008EB9EB /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38473A761F63FA8900E1A4C5 /* CaculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaculateViewController.swift; sourceTree = "<group>"; };
 		3895BB861F5D7EA5005E6687 /* NovelReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NovelReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3895BB9B1F5D7EB3005E6687 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		38CA5F341F5D7F12008EB9EB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,22 @@
 				9160B5576B80055ECABE67E0 /* Pods_NovelReader.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38473A731F63FA6E00E1A4C5 /* Caculate(计算) */ = {
+			isa = PBXGroup;
+			children = (
+				38473A741F63FA6E00E1A4C5 /* View */,
+			);
+			path = "Caculate(计算)";
+			sourceTree = "<group>";
+		};
+		38473A741F63FA6E00E1A4C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				38473A761F63FA8900E1A4C5 /* CaculateViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		3895BB7D1F5D7EA5005E6687 = {
@@ -179,18 +197,10 @@
 		F295A83D1F610E7A00B2DC66 /* Register(注册) */ = {
 			isa = PBXGroup;
 			children = (
-				F295A83E1F610E7A00B2DC66 /* Model */,
 				F295A83F1F610E7A00B2DC66 /* View */,
 				F295A8401F610E7A00B2DC66 /* ViewModel */,
 			);
 			path = "Register(注册)";
-			sourceTree = "<group>";
-		};
-		F295A83E1F610E7A00B2DC66 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		F295A83F1F610E7A00B2DC66 /* View */ = {
@@ -212,6 +222,7 @@
 		F29762BD1F5E7D280046787B /* Feature(模块) */ = {
 			isa = PBXGroup;
 			children = (
+				38473A731F63FA6E00E1A4C5 /* Caculate(计算) */,
 				F2CFF15E1F61207C0042BB71 /* Time(时间) */,
 				F295A83D1F610E7A00B2DC66 /* Register(注册) */,
 				F295A8351F60F80300B2DC66 /* Login(登录) */,
@@ -466,6 +477,7 @@
 				F29762C31F5E7D570046787B /* RoomListTableViewController.swift in Sources */,
 				F258FCC01F622D370030E9D0 /* ViewModelType.swift in Sources */,
 				F29762C51F5E7D740046787B /* RoomListViewModel.swift in Sources */,
+				38473A771F63FA8900E1A4C5 /* CaculateViewController.swift in Sources */,
 				F2A077751F5E4D3F00A368AC /* NetApi.swift in Sources */,
 				F295A83C1F60F85F00B2DC66 /* LoginViewController.swift in Sources */,
 				38CA5F451F5D7F12008EB9EB /* AppDelegate.swift in Sources */,

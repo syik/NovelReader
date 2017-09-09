@@ -35,7 +35,7 @@ class RegisterViewController: UIViewController {
             .bind(to: registerViewModel.account)
             .addDisposableTo(disposeBag)
         
-        registerViewModel.accountValid.bind(to: AccountStatus.rx.isValid)
+        //registerViewModel.accountValid.bind(to: accountService.validateRepeat(<#T##accountService#>))
     }
     
     @IBAction func backBtnClicked(_ sender: Any) {

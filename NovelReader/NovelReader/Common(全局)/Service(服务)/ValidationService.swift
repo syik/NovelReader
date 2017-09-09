@@ -35,8 +35,8 @@ class accountService {
     func validateRepeat(account: String) -> Bool {
         let filePath = NSHomeDirectory() + "/users.plist"
         let userDic = NSDictionary(contentsOfFile: filePath)
-        let userArray = userDic?.allKeys as! NSArray
-        return userArray.contains(account)
+        let userArray = userDic?.allKeys as NSArray?
+        return userArray!.contains(account)
     }
 }
 
