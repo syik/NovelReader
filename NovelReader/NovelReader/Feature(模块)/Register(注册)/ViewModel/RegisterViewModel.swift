@@ -25,6 +25,5 @@ class RegisterViewModel {
         accountValid = account.asObservable().flatMapLatest{
             account in return service.validateAccount(account: account).observeOn(MainScheduler.instance).catchErrorJustReturn(.fail(error: "error"))
         }.shareReplay(1)
-        
     }
 }

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class LoginViewController: UIViewController {
 
@@ -16,11 +18,18 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var Register: UIButton!
     @IBOutlet weak var AccountStatus: UILabel!
     @IBOutlet weak var PasswordStatus: UILabel!
+    @IBOutlet weak var ResultStauts: UILabel!
+    
+    let disposeBag = DisposeBag()
+    let loginViewModel = LoginViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        Login.rx.tap.subscribe { _ in
+            
+            self.loginViewModel.loginLocal(username: self.Account.text!, password: self.Password.text!).drive(self.ResultStauts.rx.text).addDisposableTo(self.disposeBag)
+        }.addDisposableTo(disposeBag)
     }
 
     
