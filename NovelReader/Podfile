@@ -11,5 +11,6 @@ pod 'Alamofire'
 pod 'HandyJSON'
 pod 'RxSwift'
 pod 'RxDataSources', '~> 1.0'
+pod 'SwiftyJSON'
 
 end
